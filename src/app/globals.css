@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #ECEAE3;
+    --bg-panel: #FFFFFF;
+    --border-ink: #111111;
+    --text-primary: #111111;
+    --text-muted: #6B6A64;
+    --accent-blue: #1F4FE0;
+    --highlight-yellow: #FBF3B9;
+    --badge-hot: #E23B2E;
+    --badge-warm: #F09A1E;
+    --badge-cold: #7F9CC9;
+  }
+
+  * {
+    border-color: #111111;
+  }
+
+  body {
+    background-color: #ECEAE3;
+    color: #111111;
+    font-family: var(--font-jetbrains-mono), monospace;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom scrollbar for technical aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #ECEAE3;
+  border-left: 1px solid #111111;
+}
+::-webkit-scrollbar-thumb {
+  background: #111111;
+}
